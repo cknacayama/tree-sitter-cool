@@ -180,7 +180,7 @@ module.exports = grammar({
         unary_expr: $ => choice(
             prec.right(OP_PREC.NOT, seq('not', $.expr)),
             prec.right(OP_PREC.COMPLEMENT, seq('~', $.expr)),
-            prec.right(OP_PREC.COMPLEMENT, seq('isvoid', $.expr)),
+            prec.right(OP_PREC.ISVOID, seq('isvoid', $.expr)),
         ),
 
         binary_expr: $ => choice(

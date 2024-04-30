@@ -767,7 +767,7 @@
         },
         {
           "type": "PREC_RIGHT",
-          "value": 7,
+          "value": 6,
           "content": {
             "type": "SEQ",
             "members": [
